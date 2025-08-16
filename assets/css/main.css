@@ -255,7 +255,7 @@ p {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-bottom: 1.5rem;
-    line-height: 1.1;
+    line-height: 2.1;
 }
 
 .hero-subtitle {
@@ -1031,4 +1031,5 @@ p {
         width: 100%;
         max-width: 250px;
     }
+
 }
