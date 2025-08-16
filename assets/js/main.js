@@ -850,8 +850,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Review navigation
-    document.querySelector('.review-next').addEventListener('click', nextReview);
-    document.querySelector('.review-prev').addEventListener('click', prevReview);
+    // document.querySelector('.review-next').addEventListener('click', nextReview);
+    // document.querySelector('.review-prev').addEventListener('click', prevReview);
     
     // Modal close buttons
     document.querySelectorAll('.close').forEach(closeBtn => {
@@ -954,4 +954,5 @@ document.addEventListener('DOMContentLoaded', function() {
 // Global functions for HTML onclick handlers
 window.scrollToSection = scrollToSection;
 window.toggleTheme = toggleTheme;
+
 window.toggleMobileNav = toggleMobileNav;
