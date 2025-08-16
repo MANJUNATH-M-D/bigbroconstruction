@@ -856,15 +856,27 @@ document.addEventListener('DOMContentLoaded', function() {
     // Modal close buttons
     document.querySelectorAll('.close').forEach(closeBtn => {
         closeBtn.addEventListener('click', closeModal);
+        closeBtn.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+            closeModal();
+        }, { passive: false });
     });
     
-    // Close modal on backdrop click
+    // Close modal on backdrop click (support both click and touchstart)
     document.querySelectorAll('.modal').forEach(modal => {
-        modal.addEventListener('click', (e) => {
+        function backdropHandler(e) {
             if (e.target === modal) {
                 closeModal();
             }
-        });
+        }
+        modal.addEventListener('click', backdropHandler);
+        modal.addEventListener('touchstart', function(e) {
+            // Only close if the touch is on the backdrop, not modal content
+            if (e.target === modal) {
+                e.preventDefault();
+                closeModal();
+            }
+        }, { passive: false });
     });
     
     // Navigation links
@@ -956,3 +968,4 @@ window.scrollToSection = scrollToSection;
 window.toggleTheme = toggleTheme;
 
 window.toggleMobileNav = toggleMobileNav;
+
