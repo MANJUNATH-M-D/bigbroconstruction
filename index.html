@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Civil Engineering Services - 2D/3D Planning, Steel Structures, Interior Design, and Construction Estimation">
+    <meta name="keywords" content="civil engineer, construction, 2d planning, 3d planning, steel structure, interior design, elevation, estimation">
+    <meta name="author" content="Your Civil Engineering Business">
+    <title>Civil Construction Pro - Expert Engineering Services</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjMDA3Q0ZGIi8+CjxwYXRoIGQ9Ik04IDEwSDI0VjE0SDhWMTBaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNOCAxOEgyNFYyMkg4VjE4WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+">
+    
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+     <!-- email js CDN-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+   
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>BigBro Construction</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" id="theme-toggle">
+                <span class="theme-icon">🌙</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content nav-container">
+            <div class="hero-text">
+                <h1 class="hero-title">Expert Civil Engineering Solutions</h1>
+                <p class="hero-subtitle">Transform your construction dreams into reality with our comprehensive engineering services</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('services')">Our Services</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">Get Quote</button>
+                </div>
+            </div>
+            <div class="hero-3d">
+                <!-- <div class="spline-viewer" id="spline-viewer"> -->
+                    <!-- 3D Model Placeholder -->
+                    
+                       <iframe src='https://my.spline.design/miniroomartcopy-nyH6EOrwCmccrsqLuiCZZQiU/' frameborder='0' width='100%' height='100%'></iframe>
+                      
+                        
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive civil engineering solutions for all your construction needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-service="2d-planning">
+                    <div class="service-icon">📐</div>
+                    <h3>2D Planning</h3>
+                    <p>Detailed architectural drawings and floor plans</p>
+                    <button class="btn btn-outline">Learn More</button>
+                </div>
+                
+                <div class="service-card" data-service="steel-structure">
+                    <div class="service-icon">🏗️</div>
+                    <h3>Steel Structure</h3>
+                    <p>Robust steel framework design and analysis</p>
+                    <button class="btn btn-outline">Learn More</button>
+                </div>
+                
+                <div class="service-card" data-service="3d-planning">
+                    <div class="service-icon">🏢</div>
+                    <h3>3D Planning</h3>
+                    <p>Advanced 3D modeling and visualization</p>
+                    <button class="btn btn-outline">Learn More</button>
+                </div>
+                
+                <div class="service-card" data-service="elevation">
+                    <div class="service-icon">📊</div>
+                    <h3>2D & 3D Elevation</h3>
+                    <p>Professional elevation drawings and renders</p>
+                    <button class="btn btn-outline">Learn More</button>
+                </div>
+                
+                <div class="service-card" data-service="interior">
+                    <div class="service-icon">🏠</div>
+                    <h3>Interior Design</h3>
+                    <p>Creative interior space planning and design</p>
+                    <button class="btn btn-outline">Learn More</button>
+                </div>
+                
+                <div class="service-card" data-service="estimation">
+                    <div class="service-icon">💰</div>
+                    <h3>Cost Estimation</h3>
+                    <p>Accurate project costing and budget planning</p>
+                    <button class="btn btn-outline">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Projects</h2>
+                <p>Showcasing our expertise through successful project deliveries</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-project="residential">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDQwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZjBmOWZmIi8+CjxyZWN0IHg9IjUwIiB5PSIxMDAiIHdpZHRoPSIzMDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjMDA3Q0ZGIiBvcGFjaXR5PSIwLjIiLz4KPHN2ZyB4PSIxNzUiIHk9IjE1IiB3aWR0aD0iNTAiIGhlaWdodD0iNTAiPgo8cGF0aCBkPSJNMjUgNUw0NSA0MEg1TDI1IDVaIiBmaWxsPSIjMDA3Q0ZGIi8+Cjwvc3ZnPgo8dGV4dCB4PSIyMDAiIHk9IjEzMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMDA3Q0ZGIj5SZXNpZGVudGlhbCBDb21wbGV4PC90ZXh0Pgo8L3N2Zz4=" alt="Residential Complex">
+                    </div>
+                    <div class="project-info">
+                        <h3>Residential Complex</h3>
+                        <p>Modern apartment complex with 50 units</p>
+                        <span class="project-status">Completed</span>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-project="commercial">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDQwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZjBmOWZmIi8+CjxyZWN0IHg9IjUwIiB5PSI1MCIgd2lkdGg9IjMwMCIgaGVpZ2h0PSIxNTAiIGZpbGw9IiMwMDdDRkYiIG9wYWNpdHk9IjAuMyIvPgo8cmVjdCB4PSI4MCIgeT0iODAiIHdpZHRoPSIyNDAiIGhlaWdodD0iODAiIGZpbGw9IiMwMDdDRkYiIG9wYWNpdHk9IjAuMiIvPgo8dGV4dCB4PSIyMDAiIHk9IjEzMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMDA3Q0ZGIj5Db21tZXJjaWFsIEJ1aWxkaW5nPC90ZXh0Pgo8L3N2Zz4=" alt="Commercial Building">
+                    </div>
+                    <div class="project-info">
+                        <h3>Commercial Building</h3>
+                        <p>10-story office building with retail space</p>
+                        <span class="project-status">In Progress</span>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-project="industrial">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDQwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZjBmOWZmIi8+CjxyZWN0IHg9IjUwIiB5PSI4MCIgd2lkdGg9IjMwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiMwMDdDRkYiIG9wYWNpdHk9IjAuMjUiLz4KPGNpcmNsZSBjeD0iMzIwIiBjeT0iNjAiIHI9IjE1IiBmaWxsPSIjMDA3Q0ZGIiBvcGFjaXR5PSIwLjQiLz4KPHRleHQgeD0iMjAwIiB5PSIxNDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzAwN0NGRiI+SW5kdXN0cmlhbCBXYXJlaG91c2U8L3RleHQ+Cjwvc3ZnPg==" alt="Industrial Warehouse">
+                    </div>
+                    <div class="project-info">
+                        <h3>Industrial Warehouse</h3>
+                        <p>Large-scale warehouse with steel framework</p>
+                        <span class="project-status">Completed</span>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-project="bridge">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDQwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZjBmOWZmIi8+CjxwYXRoIGQ9Ik01MCAyMDBMMzUwIDIwMCIgc3Ryb2tlPSIjMDA3Q0ZGIiBzdHJva2Utd2lkdGg9IjgiLz4KPGVsbGlwc2UgY3g9IjIwMCIgY3k9IjE3MCIgcng9IjE1MCIgcnk9IjMwIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDdDRkYiIHN0cm9rZS13aWR0aD0iNCIvPgo8cmVjdCB4PSI5MCIgeT0iMTgwIiB3aWR0aD0iOCIgaGVpZ2h0PSI0MCIgZmlsbD0iIzAwN0NGRiIvPgo8cmVjdCB4PSIzMDAiIHk9IjE4MCIgd2lkdGg9IjgiIGhlaWdodD0iNDAiIGZpbGw9IiMwMDdDRkYiLz4KPHRleHQgeD0iMjAwIiB5PSI5MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMDA3Q0ZGIj5TdGVlbCBCcmlkZ2U8L3RleHQ+Cjwvc3ZnPg==" alt="Steel Bridge">
+                    </div>
+                    <div class="project-info">
+                        <h3>Steel Bridge</h3>
+                        <p>200m span bridge over river crossing</p>
+                        <span class="project-status">Planning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client Reviews</h2>
+                <p>What our clients say about our services</p>
+            </div>
+            <div class="reviews-container">
+                <div class="reviews-slider" id="reviews-slider">
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p>"Exceptional service and attention to detail. The 3D planning was incredibly helpful in visualizing our project."</p>
+                        <div class="review-author">
+                            <strong>John Smith</strong>
+                            <span>Construction Manager</span>
+                        </div>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p>"Professional team with excellent technical expertise. Delivered our steel structure project on time and within budget."</p>
+                        <div class="review-author">
+                            <strong>Sarah Johnson</strong>
+                            <span>Project Developer</span>
+                        </div>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p>"Outstanding interior design work. They transformed our commercial space beautifully."</p>
+                        <div class="review-author">
+                            <strong>Mike Davis</strong>
+                            <span>Business Owner</span>
+                        </div>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p>"Accurate cost estimation helped us plan our budget effectively. Highly recommended!"</p>
+                        <div class="review-author">
+                            <strong>Lisa Brown</strong>
+                            <span>Property Developer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-nav">
+                    <button class="review-prev">‹</button>
+                    <button class="review-next">›</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to start your construction project? Contact us for a consultation</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@bigbroconstruction.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Nidagundi, Karnataka, India</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <input type="text" name="name" placeholder="Your Name" >
+                        <input type="email" name="email" placeholder="Your Email" >
+                    </div>
+                    <div class="form-row">
+                        <input type="tel" name="phone" placeholder="Phone Number">
+                        <select name="service" >
+                            <option value="">Select Service</option>
+                            <option value="2D Planning">2D Planning</option>
+                            <option value="3D Planning">3D Planning</option>
+                            <option value="Steel Structure">Steel Structure</option>
+                            <option value="Elevation Design">Elevation Design</option>
+                            <option value="Interior Design">Interior Design</option>
+                            <option value="Cost Estimation">Cost Estimation</option>
+                        </select>
+                    </div>
+                    <textarea name="message" placeholder="Project Details" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>BigBro Construction</h3>
+                    <p>Professional Civil Engineering Solutions</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BigBro Construction. All rights reserved. | Designed for excellence in civil engineering.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="service-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="service-details"></div>
+        </div>
+    </div>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="project-details"></div>
+        </div>
+    </div>
+
+    <!-- Success Message -->
+ <!-- go to to button  -->
+ <button id="goToTopBtn" title="Go to top" style="display:none;position:fixed;bottom:40px;right:40px;z-index:1000;padding:12px 18px;border:none;border-radius:50%;background:#007CFF;color:#fff;font-size:22px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.15);transition:background 0.2s;">↑</button>
+ <script>
+    // Show/hide button on scroll
+    window.onscroll = function() {
+      const btn = document.getElementById("goToTopBtn");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+         btn.style.display = "block";
+      } else {
+         btn.style.display = "none";
+      }
+    };
+    // Scroll to top on click
+    document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("goToTopBtn").onclick = function() {
+         window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
+    });
+ </script>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
